@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using teste_dotnet.Services;
+using teste_dotnet.DTOs;
+
 
 namespace teste_dotnet.Controllers;
 
