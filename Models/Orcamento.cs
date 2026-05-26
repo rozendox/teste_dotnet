@@ -1,3 +1,5 @@
+namespace teste_dotnet.Models;
+
 // Models/Orcamento.cs
 
 /// <summary>

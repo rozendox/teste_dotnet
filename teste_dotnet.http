@@ -1,0 +1,22 @@
+@teste_dotnet_HostAddress = http://localhost:5256
+
+POST {{teste_dotnet_HostAddress}}/api/orcamentos
+Content-Type: application/json
+Accept: application/json
+
+{
+  "clienteId": 1,
+  "veiculoId": 2,
+  "itens": [
+    {
+      "descricao": "Troca de Óleo",
+      "quantidade": 1,
+      "valorUnitario": 150.00
+    },
+    {
+      "descricao": "Filtro de Óleo",
+      "quantidade": 1,
+      "valorUnitario": 45.50
+    }
+  ]
+}
