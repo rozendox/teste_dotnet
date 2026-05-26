@@ -19,4 +19,20 @@ public class AppDbContext : DbContext
 
     public DbSet<Orcamento> Orcamentos { get; set; }
     public DbSet<OrcamentoItem> OrcamentoItens { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Orcamento>(entity =>
+        {
+            entity.Property(e => e.ValorTotal).HasPrecision(18, 2);
+        });
+
+        modelBuilder.Entity<OrcamentoItem>(entity =>
+        {
+            entity.Property(e => e.ValorUnitario).HasPrecision(18, 2);
+            entity.Property(e => e.ValorTotal).HasPrecision(18, 2);
+        });
+    }
 }
