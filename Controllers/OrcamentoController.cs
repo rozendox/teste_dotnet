@@ -1,7 +1,13 @@
-/// Controllers/OrcamentoController.cs
+using Microsoft.AspNetCore.Mvc;
+using teste_dotnet.Services;
+
+namespace teste_dotnet.Controllers;
 
 /// <summary>
 /// Controller responsável pelos endpoints de orçamento.
-/// Realiza operações de criação, consulta, atualização e remoção.
 /// </summary>
-
+[ApiController]
+[Route("api/orcamentos")]
+public class OrcamentoController : ControllerBase
+{
+}
