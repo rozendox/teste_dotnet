@@ -1,3 +1,5 @@
+namespace teste_dotnet.DTOs;
+
 
 // DTOs/CriarOrcamentoResponse.cs
 
