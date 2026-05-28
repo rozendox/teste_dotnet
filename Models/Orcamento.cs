@@ -18,4 +18,5 @@ public class Orcamento
     public DateTime? DataFinalizacao { get; set; }
 
     public List<OrcamentoItem> Itens { get; set; } = new();
-}
+} 
+
